@@ -108,9 +108,15 @@ body{
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0!important;
+   color: #000000;
+
 }
-.icon img{
-    width: 40px;
+
+.arrows{
+   font-size: 48px;
+}
+.icon{
+font-size: 48px;
 }
 .icon button{
     background-color: transparent;
