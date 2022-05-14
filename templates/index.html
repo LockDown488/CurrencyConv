@@ -24,7 +24,7 @@
                 <div class="from-amount">
                     <label for="">Amount</label>
                     <label>
-                        <input name="cur" value="1" type="number">
+                        <input name="cur" value="{% if amount != None %}{{ amount }}{% endif %}" type="number">
                     </label>
 
                 </div>
@@ -66,7 +66,7 @@
                 <span id="to-result"></span>
             </p>
         </div>
-            <form action="/btn">
+            <form action="/calc" data-ajax="true" data-ajax-mode="replace" data-ajax-update="#to-result" method="post">
                 <button class="button" type="submit" id="convert-btn">convert</button>
             </form>
         </form>

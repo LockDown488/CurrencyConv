@@ -41,6 +41,7 @@ def getRequest():
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    amount = None
     x_result = ''
     if request.method == 'POST':
         cf = currency_from()
@@ -69,7 +70,7 @@ def index():
             result = amount
             x_result = f"{result} {ct}"
 
-    return render_template('index.html', x_result=x_result)
+    return render_template('index.html', x_result=x_result, amount=amount)
 
 
 if __name__ == '__main__':
