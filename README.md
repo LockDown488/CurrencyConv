@@ -22,4 +22,4 @@ http://127.0.0.1:8000 - после запуска приложения, необ
 
 ## Application
 
-![](application.png)
+![](images/application.png)
